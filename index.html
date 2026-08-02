@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>12th TOPPER SHORT NOTES</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Watermark -->
+<div class="watermark"></div>
+
+<!-- Logo -->
+<img src="logo.png" class="logo">
+
+<!-- Website Name -->
+
+<h1>12th TOPPER<br>SHORT NOTES</h1>
+
+<div class="theme-box">
+<button onclick="setTheme('light')" class="theme-btn">☀️ Light</button>
+<button onclick="setTheme('dark')" class="theme-btn">🌙 Dark</button>
+</div>
+
+<div class="search-box">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Chapter Search..."
+        onkeyup="searchChapter()">
+</div>
+
+<a href="javascript:void(0)" class="btn" onclick="togglePhysics()">
+⚛️ Physics
+</a>
+<div id="physicsMenu" class="submenu">
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter1')">
+📘 अध्याय 1 - वैद्युत आवेश तथा क्षेत्र ▼
+</div>
+
+<div id="chapter1" class="topics">
+
+<div class="pdf-box">
+
+<a href="short_notes.pdf" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="./pdf/physics/ch1/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch1/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch1/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch1/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch1/mcq.pdf">🎯 MCQ</a>
+</div>
+</div>
+
+
+<div class="chapter-title" onclick="toggleChapter('chapter2')">
+📘 अध्याय 2 - स्थिरवैद्युत विभव तथा धारिता ▼
+</div>
+
+<div id="chapter2" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch2/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch2/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch2/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch2/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch2/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch2/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter3')">
+📘 अध्याय 3 - विद्युत धारा ▼
+</div>
+
+<div id="chapter3" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch3/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch3/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch3/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch3/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch3/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch3/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter4')">
+📘 अध्याय 4 - गतिमान आवेश एवं चुंबकत्व ▼
+</div>
+
+<div id="chapter4" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch4/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch4/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch4/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch4/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch4/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch4/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter5')">
+📘 अध्याय 5 - चुंबकत्व एवं द्रव्य ▼
+</div>
+
+<div id="chapter5" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch5/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch5/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch5/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch5/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch5/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch5/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter6')">
+📘 अध्याय 6 - विद्युतचुंबकीय प्रेरण ▼
+</div>
+
+<div id="chapter6" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch6/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch6/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch6/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch6/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch6/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch6/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter7')">
+📘 अध्याय 7 - प्रत्यावर्ती धारा ▼
+</div>
+
+<div id="chapter7" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch7/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch7/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch7/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch7/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch7/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch7/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter8')">
+📘 अध्याय 8 - विद्युतचुंबकीय तरंगें ▼
+</div>
+
+<div id="chapter8" class="topics">
+
+<div class="pdf-box">
+
+<a href="pdf/physics/ch8/short_notes.pdf" target="_blank" class="read-btn">
+📖 Read Notes
+</a>
+
+<a href="pdf/physics/ch8/short_notes.pdf" download class="download-btn">
+⬇ Download
+</a>
+
+</div>
+
+<a href="pdf/physics/ch8/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch8/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch8/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch8/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter9')">
+📘 अध्याय 9 - किरण प्रकाशिकी एवं प्रकाशिक यंत्र ▼
+</div>
+
+<div id="chapter9" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch9/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch9/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch9/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch9/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch9/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch9/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter10')">
+📘 अध्याय 10 - तरंग प्रकाशिकी ▼
+</div>
+
+<div id="chapter10" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch10/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch10/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch10/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch10/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch10/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch10/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter11')">
+📘 अध्याय 11 - विकिरण तथा द्रव्य की द्वैत प्रकृति ▼
+</div>
+
+<div id="chapter11" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch11/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch11/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch11/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch11/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch11/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch11/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter12')">
+📘 अध्याय 12 - परमाणु ▼
+</div>
+
+<div id="chapter12" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch12/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch12/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch12/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch12/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch12/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch12/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter13')">
+📘 अध्याय 13 - नाभिक ▼
+</div>
+
+<div id="chapter13" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch13/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch13/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch13/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch13/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch13/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch13/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+<div class="chapter">
+
+<div class="chapter-title" onclick="toggleChapter('chapter14')">
+📘 अध्याय 14 - अर्धचालक इलेक्ट्रॉनिकी ▼
+</div>
+
+<div id="chapter14" class="topics">
+
+<div class="pdf-box">
+
+    <a href="pdf/physics/ch14/short_notes.pdf" target="_blank" class="read-btn">
+        📖 Read Notes
+    </a>
+
+    <a href="pdf/physics/ch14/short_notes.pdf" download class="download-btn">
+        ⬇ Download
+    </a>
+
+</div>
+
+<a href="pdf/physics/ch14/formula.pdf">🧮 Important Formula</a>
+
+<a href="pdf/physics/ch14/important_questions.pdf">❓ Important Questions</a>
+
+<a href="pdf/physics/ch14/pyq.pdf">📑 PYQ</a>
+
+<a href="pdf/physics/ch14/mcq.pdf">🎯 MCQ</a>
+
+</div>
+
+</div>
+
+</div>
+
+<a href="chemistry.html" class="btn">🧪 Chemistry</a>
+
+<a href="math.html" class="btn">📐 Mathematics</a>
+
+<a href="hindi.html" class="btn">📖 Hindi</a>
+
+<a href="english.html" class="btn">📘 English</a>
+
+</div>
+<script>
+
+// Physics Menu Open / Close
+function togglePhysics() {
+    var menu = document.getElementById("physicsMenu");
+
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
+}
+
+// Chapter Open / Close
+function toggleChapter(id) {
+
+    var topics = document.getElementsByClassName("topics");
+
+    for (var i = 0; i < topics.length; i++) {
+        if (topics[i].id != id) {
+            topics[i].style.display = "none";
+        }
+    }
+
+    var x = document.getElementById(id);
+
+    if (x.style.display == "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+// Search Chapter
+function searchChapter() {
+
+    // Physics menu अपने आप खुल जाएगा
+    document.getElementById("physicsMenu").style.display = "block";
+
+    var input = document.getElementById("searchInput");
+    var filter = input.value.toUpperCase();
+
+    var chapters = document.getElementsByClassName("chapter");
+
+    for (var i = 0; i < chapters.length; i++) {
+
+        var title = chapters[i].getElementsByClassName("chapter-title")[0];
+
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            chapters[i].style.display = "block";
+        } else {
+            chapters[i].style.display = "none";
+        }
+    }
+
+}
+
+// Dark / Light Theme
+function setTheme(mode) {
+
+    if (mode == "dark") {
+        document.body.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+    } else {
+        document.body.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+    }
+
+}
+
+// Page Load होने पर Theme Save रहे
+window.onload = function () {
+
+    var theme = localStorage.getItem("theme");
+
+    if (theme == "dark") {
+        document.body.classList.add("dark");
+    }
+
+};
+
+</script>
+
+</body>
+</html>
